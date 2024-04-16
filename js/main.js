@@ -20,7 +20,10 @@ const init = function () {
   activePlayer = 0;
   playing = true;
   document
-    .querySelector(`.player--${activePlayer}`)
+    .querySelector('.player--0')
+    .classList.remove('player--winner');
+    document
+    .querySelector('.player--1')
     .classList.remove('player--winner');
   score0El.textContent = 0;
   score1El.textContent = 0;
